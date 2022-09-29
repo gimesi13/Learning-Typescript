@@ -3,6 +3,7 @@ import "./App.css";
 import List from "./Components/List";
 import AddToList from "./Components/AddToList";
 import Pedro from "./Components/Pedro";
+import WebDev from "./Components/WebDev";
 
 export interface IState {
   people: {
@@ -30,6 +31,7 @@ function App() {
       <List people={people} />
       <AddToList people={people} setPeople={setPeople} />
       <Pedro />
+      <WebDev />
     </div>
   );
 }
