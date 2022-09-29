@@ -22,6 +22,8 @@ const AddToList: React.FC<IProps> = ({ people, setPeople }) => {
 
   const handleClick = (): void => {
     if (!input.name || !input.age || !input.img) {
+      alert("There is an empty field");
+      return;
     }
 
     setPeople([
