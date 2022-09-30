@@ -2,8 +2,8 @@ import { FC, useState, useEffect, useRef, ReactNode } from "react";
 
 const WebDev: FC = () => {
   const [name, setName] = useState<any>("");
-  const inputRef = useRef<any>("");
-  const prevName = useRef<any>("");
+  const inputRef = useRef<any>(null);
+  const prevName = useRef<any>(null);
 
   useEffect(() => {
     prevName.current = name;
