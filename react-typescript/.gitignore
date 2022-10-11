@@ -23,8 +23,14 @@ yarn-debug.log*
 yarn-error.log*
 
 
+
+useContext
 useRef
-useReducer
 more Typescript 
 RESTful API design
 GitLab
+async javascript
+try-catch (error handling)
+stringinterprelation (ES6 syntax)
+array methods
+
