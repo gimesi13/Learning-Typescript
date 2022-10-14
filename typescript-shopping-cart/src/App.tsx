@@ -4,10 +4,12 @@ import { Store } from "./pages/Store";
 import { About } from "./pages/About";
 import { Navbar } from "./components/Navbar";
 import { Container } from "react-bootstrap";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import { StoreItem } from "./components/StoreItem";
 
 function App() {
   return (
-    <>
+    <ShoppingCartProvider>
       <Navbar />
       <Container>
         <Routes>
@@ -16,7 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </Container>
-    </>
+    </ShoppingCartProvider>
   );
 }
 
