@@ -40,7 +40,6 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
               className="d-flex align-items-center flex-column"
               style={{ gap: ".5rem" }}
             >
-              Hi
               <div
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
