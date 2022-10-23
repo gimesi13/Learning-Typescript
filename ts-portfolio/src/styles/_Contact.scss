@@ -1,0 +1,225 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.contact {
+  position: relative;
+  .wrapper {
+    z-index: -10;
+    background: rgb(26, 68, 159);
+    background: linear-gradient(
+      108deg,
+      rgba(26, 68, 159, 1) 2%,
+      rgba(70, 15, 99, 1) 38%,
+      rgba(222, 110, 255, 1) 100%
+    );
+  }
+
+  @include flexCenter;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+
+  //tablet//
+  @media (min-width: 576px) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  //laptop//
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  //desktop//
+  @media (min-width: 992px) {
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  //large//
+  @media (min-width: 1200px) {
+    padding: 2rem;
+    padding-bottom: 8rem;
+  }
+
+  /* LEFT SECTION */
+  .contact-left {
+    @include flexCenter;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+    //large//
+    @media (min-width: 1200px) {
+      max-width: 40%;
+    }
+
+    .inbox-svg {
+      width: 80%;
+      //tablet//
+      @media (min-width: 576px) {
+        width: 60%;
+      }
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  /* RIGHT SECTION */
+  .contact-right {
+    @include flexCenter;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 150%;
+    width: 100%;
+    margin: 1rem;
+    gap: 1rem;
+    //tablet//
+    @media (min-width: 768px) {
+      max-width: 60%;
+    }
+    //large//
+    @media (min-width: 1200px) {
+      max-width: 45%;
+    }
+
+    h1 {
+      padding: 0.5rem;
+      margin: 0;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 3rem;
+    }
+
+    h2 {
+      color: rgb(219, 219, 219);
+      font-size: 1rem;
+
+      @media (min-width: 576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .contact-right-name {
+      @include flexCenter;
+      width: 100%;
+      gap: 1rem;
+
+      input {
+        background: rgba(255, 255, 255, 0.139);
+        width: 100%;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        flex: 1;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+        font-size: 1rem;
+
+        //laptop//
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
+      }
+    }
+    .contact-right-email-phone {
+      @include flexCenter;
+      width: 100%;
+      gap: 1rem;
+
+      input {
+        background: rgba(255, 255, 255, 0.139);
+        width: 100%;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        flex: 1;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+        font-size: 1rem;
+
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .contact-right-message {
+      @include flexCenter;
+      width: 100%;
+
+      textarea {
+        background: rgba(255, 255, 255, 0.139);
+        font-size: 2rem;
+        width: 100%;
+        min-height: 13rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+      }
+      textarea::placeholder {
+        color: white;
+        font-size: 1rem;
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .contact-right-send {
+      @include flexCenter;
+      border-radius: 0px;
+
+      .contact-right-send-input {
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        border-radius: 0px;
+        font-size: 1rem;
+        padding: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        border: 2px solid black;
+
+        @media (min-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

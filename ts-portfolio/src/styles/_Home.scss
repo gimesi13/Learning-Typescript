@@ -1,0 +1,200 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.home-section {
+  position: relative;
+  .wrapper {
+    z-index: -10;
+    //background: url("../Pictures/pexels-marek-piwnicki-11032573(1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @include flexCenter;
+  flex-direction: column;
+  padding-top: $navbarHeight - 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 7rem;
+  gap: 1rem;
+  max-height: 1300px;
+  min-height: 80vh;
+  font-size: 1.5rem;
+  //tablet//
+  @media (min-width: 576px) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  //laptop//
+  @media (min-width: 768px) {
+    padding-top: $navbarHeight + 1rem;
+    flex-direction: row;
+    gap: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  //desktop//
+  @media (min-width: 992px) {
+    gap: 1rem;
+  }
+  @media (min-height: 992px) {
+    gap: 1rem;
+    height: 80vh;
+    min-height: auto;
+  }
+  //large//
+  @media (min-width: 1200px) {
+    gap: 2rem;
+    padding-top: $navbarHeight + 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  /*//// LEFT SECTION ////*/
+  .home-left {
+    @include flexCenter;
+    flex-direction: column;
+    flex: 150%;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+    text-align: center;
+    //laptop//
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .home-left-welcome-wrapper {
+      background: rgba(221, 99, 219, 0.288);
+      background: linear-gradient(
+        211deg,
+        rgba(221, 99, 219, 0.334) 14%,
+        rgba(61, 47, 154, 0.662) 62%,
+        rgba(0, 50, 119, 0.671) 78%
+      );
+      padding: 3px;
+
+      //laptop//
+      @media (min-width: 768px) {
+        background: rgba(221, 99, 219, 0.658);
+        background: linear-gradient(
+          211deg,
+          rgba(221, 99, 219, 0.555) 14%,
+          rgba(62, 47, 154, 1) 62%,
+          rgba(0, 50, 119, 1) 78%
+        );
+        padding: 3px;
+      }
+      .home-left-welcome {
+        background: rgba(20, 20, 20, 1);
+        background: linear-gradient(
+          19deg,
+          rgba(20, 20, 20, 1) 20%,
+          rgba(20, 20, 20, 0) 100%
+        );
+        padding: 1.5rem;
+        font-weight: bold;
+        //desktop//
+        @media (min-width: 992px) {
+          padding: 1.7rem;
+          font-size: 1.7rem;
+        }
+        //large//
+        @media (min-width: 1200px) {
+          padding: 1.5rem;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      //desktop//
+      @media (min-width: 992px) {
+        font-size: 4rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 5rem;
+      }
+    }
+    p {
+      @media (min-width: 992px) {
+        font-size: 1.6rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 1.8rem;
+      }
+      span a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .home-left-connect {
+      @include flexCenter;
+      white-space: nowrap;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+      @media (min-width: 992px) {
+        font-size: 1.7rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        font-size: 2rem;
+      }
+
+      .right-arrow-svg {
+        margin: 1rem;
+
+        font-size: 2rem;
+
+        //large//
+        @media (min-width: 1200px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  /*//// RIGHT SECTION ////*/
+  .home-right {
+    @include flexCenter;
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
+
+    .programmer-svg {
+      width: 17rem;
+      @media (min-width: 992px) {
+        width: 22rem;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        width: 30rem;
+      }
+    }
+  }
+}

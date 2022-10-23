@@ -1,0 +1,229 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 992px) {
+} 
+*/
+
+.navbar {
+  color: rgb(219, 219, 219);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  @include flexCenter;
+  height: $navbarHeight;
+  justify-content: space-between;
+
+  visibility: hidden;
+
+  transition: all 0.2s ease;
+
+  //laptop//
+  @media (min-width: 768px) {
+    visibility: visible;
+    background-color: rgba(17, 17, 17, 0.26);
+    backdrop-filter: blur(15px);
+  }
+  //large//
+  @media (min-width: 1200px) {
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
+
+  /* LEFT SECTION */
+  /* no logo yet */
+  .navbar-left {
+    @include flexCenter;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    //tablet//
+    @media (min-width: 576px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      //laptop//
+    }
+    @media (min-width: 768px) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    //large//
+    @media (min-width: 1200px) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+
+    .navbar-left-logo {
+      @include flexCenter;
+
+      .hacker-svg {
+        width: 5.9rem;
+      }
+    }
+  }
+
+  /* RIGHT SECTION */
+  .navbar-right {
+    @include flexCenter;
+    height: 100%;
+    visibility: hidden;
+    //laptop//
+    @media (min-width: 768px) {
+      visibility: visible;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      font-size: 1.7rem;
+      gap: 1rem;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      font-size: 2rem;
+    }
+
+    .routers {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+      gap: 2rem;
+      @media (min-width: 992px) {
+        gap: 1.5rem;
+      }
+      @media (min-width: 1200px) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        gap: 5vw;
+      }
+
+      a:hover {
+        color: white;
+        transition: color 0.3s;
+      }
+    }
+
+    .soc-icons {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+      gap: 0.5rem;
+      display: none;
+      //desktop//
+      @media (min-width: 992px) {
+        display: flex;
+      }
+
+      div {
+        @include flexCenter;
+
+        .social-icons {
+          //desktop//
+          @media (min-width: 992px) {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+      }
+      div:hover {
+        color: white;
+        transition: color 0.3s;
+      }
+    }
+
+    .connect-button-box {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+
+      .connect-button {
+        border: 2px solid rgb(219, 219, 219);
+        padding: 1rem;
+        white-space: nowrap;
+      }
+      div:hover {
+        color: white;
+        transition: color 0.3s;
+      }
+    }
+  }
+
+  /* HAMBURGER MENU */
+  .hamburger-box {
+    z-index: 15;
+    @include flexCenter;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    cursor: pointer;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    //tablet//
+    @media (min-width: 768px) {
+      visibility: hidden;
+    }
+    div {
+      @include flexCenter;
+      .hamburger-icon {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    pointer-events: none;
+    @include flexCenter;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 5rem;
+    padding: 1rem;
+    padding-top: $navbarHeight - 4rem;
+    background: rgb(30, 30, 30);
+    visibility: visible;
+    @media (max-height: 540px) {
+      font-size: 3rem;
+      padding: 0;
+    }
+
+    @media (min-width: 768px) {
+      visibility: hidden;
+    }
+    div {
+      transition: color 0.3s;
+    }
+    div:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.navbar.small {
+  box-shadow: 0px 0px 17px 10px #252525;
+  height: 5.5rem;
+  background-color: rgb(17, 17, 17);
+  box-shadow: 0px 0px 10px 4px #252525;
+  transition: all 0.2s ease;
+}

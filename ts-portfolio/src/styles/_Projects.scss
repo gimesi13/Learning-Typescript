@@ -1,0 +1,162 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.projects {
+  position: relative;
+  .wrapper {
+    z-index: -10;
+  }
+  position: relative;
+  @include flexCenter;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  background: black;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    //tablet//
+    @media (min-width: 576px) {
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+
+  .tabs {
+    @include flexCenter;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 3px solid rgb(67, 67, 67);
+    overflow: hidden;
+    cursor: pointer;
+
+    //tablet//
+    @media (min-width: 576px) {
+      width: 70%;
+    }
+    //laptop//
+    @media (min-width: 768px) {
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      width: 60%;
+    }
+    //large//
+    @media (min-width: 1200px) {
+    }
+    .tab {
+      z-index: 1;
+      position: relative;
+      background: rgb(40, 40, 40);
+      @include flexCenter;
+      width: 100%;
+      padding: 0.5rem;
+
+      .tab-background {
+        background: rgb(97, 59, 144);
+        background: linear-gradient(
+          54deg,
+          rgba(97, 59, 144, 1) 0%,
+          rgba(156, 35, 195, 1) 34%,
+          rgba(218, 95, 255, 1) 98%
+        );
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .tab-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 1rem;
+    //tablet//
+    @media (min-width: 576px) {
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+    }
+    //large//
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 85%;
+    }
+
+    div {
+      @include flexCenter;
+      width: 100%;
+    }
+  }
+  .tab-2,
+  .tab-3 {
+    background: rgb(40, 40, 40);
+
+    @include flexCenter;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+    .thinker {
+      @include flexCenter;
+      .thinker-svg {
+        width: 15rem;
+        //laptop//
+        @media (min-width: 768px) {
+          width: 25rem;
+        }
+      }
+    }
+
+    p {
+      width: 100%;
+      //desktop//
+      @media (min-width: 992px) {
+        text-align: center;
+      }
+    }
+
+    //desktop//
+    @media (min-width: 992px) {
+      flex-direction: row;
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/* MIXINS */
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* VARIABLES */
+$navbarHeight: 6.5rem;
