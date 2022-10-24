@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import OutsideClick from "detect-outside-click-react";
+/* Icons */
 import { GoLogoGithub } from "react-icons/go";
 import { HiCode } from "react-icons/hi";
 
