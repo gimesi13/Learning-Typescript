@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import inbox from "../Pictures/undraw_envelope_re_f5j4.svg";
 import { SiMinutemailer } from "react-icons/si";
 import { Form, Field } from "react-final-form";
+import { ValidationErrors } from "final-form";
 
 /* variants */
 const animatedElement = {
@@ -17,28 +18,36 @@ const animatedElement = {
 
 export const Contact: React.FC = (): JSX.Element => {
   /* emailjs code*/
-  const form: any = useRef<HTMLFormElement>(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = () => {
     //e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_a0zsakn",
-        "template_l8p28wx",
-        form.current,
-        "g4PHWosCI3QMWwFrf"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (null !== form.current) {
+      emailjs
+        .sendForm(
+          "service_a0zsakn",
+          "template_l8p28wx",
+          form.current,
+          "g4PHWosCI3QMWwFrf"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
-  const validate: any = (e: any) => {};
+  const validate = (
+    e: object
+  ): ValidationErrors | Promise<ValidationErrors> => {
+    const errors = {};
+    //some validation logic goes here
+    return errors;
+  };
 
   return (
     <section className="banner contact">
