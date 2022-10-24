@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Youth-Hostel Webpage",
+    "description": "Multi-language responsive Website of an Austrian Youth Hostel",
+    "tech": "React, Framer, SASS",
+    "link": "https://guesthousemitterbach.com/",
+    "thumbnail": "images/ghm-react-image.PNG",
+    "github": "https://github.com/gimesi13/GHM-React/tree/main/ghm-react"
+  },
+  {
+    "name": "Daily Quotes",
+    "description": "React wish generator with searchable and sortable library",
+    "tech": "RESTful API, React, CSS ",
+    "link": "https://brilliant-semolina-fe6b3a.netlify.app/",
+    "thumbnail": "images/daily-quotes-image.PNG",
+    "github": "https://github.com/gimesi13/Learning-React/tree/main/wishes-project"
+  },
+  {
+    "name": "React Todo",
+    "description": "Todo List with local storage",
+    "tech": " React, CSS ",
+    "link": "https://whimsical-cascaron-343463.netlify.app/",
+    "thumbnail": "images/react-todo-image.PNG",
+    "github": "https://github.com/gimesi13/Learning-React/tree/main/react-todo"
+  },
+  {
+    "name": "Framer Motion",
+    "description": "Some basic Framer Motion animations",
+    "tech": " React, CSS, Framer Motion ",
+    "link": "https://neon-dusk-d9a33c.netlify.app/",
+    "thumbnail": "images/framer-motion-image.PNG",
+    "github": "https://github.com/gimesi13/Framer-Motion-React/tree/master/framer-motion/framer-motion-2/framer-animations-2"
+  },
+  {
+    "name": "Tailwind CSS",
+    "description": "Homepage built with Tailwind and React",
+    "tech": " React, Tailwind.css, Typed",
+    "link": "https://630f4e1ef2160c0058fda2cf--magical-kangaroo-e27e00.netlify.app/",
+    "thumbnail": "images/tailwind-image.PNG",
+    "github": "https://github.com/gimesi13/Learning-React/tree/main/learning-tailwind-css"
+  },
+  {
+    "name": "Hostel Website",
+    "description": "!Old Version! One page website for a ski-hostel (Vanilla JS)",
+    "tech": "Javascript, Jquery, HTML, CSS",
+    "link": "https://630f4fcb1146540082c5b2bf--transcendent-kringle-11b49f.netlify.app/",
+    "thumbnail": "images/ghm-js-image.PNG",
+    "github": "https://github.com/gimesi13/GuestHouse-Mitterbach--Vanilla-JS-"
+  }
+]
