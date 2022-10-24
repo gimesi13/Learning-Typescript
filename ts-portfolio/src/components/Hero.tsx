@@ -30,6 +30,7 @@ export const Hero: React.FC<Props> = ({ name, age }) => {
     },
     show: { opacity: 1, x: 0 },
   };
+  /* VARIANTS (animations) END */
 
   return (
     <section className="banner home-section" id="home">

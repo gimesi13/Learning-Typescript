@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-/* package to detect outside click. wrap around component */
 import OutsideClick from "detect-outside-click-react";
 import { GoLogoGithub } from "react-icons/go";
 import { HiCode } from "react-icons/hi";
@@ -19,6 +18,7 @@ interface ProjectProps {
 export const Project: React.FC<ProjectProps> = ({ project }): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  /* ANIMATIONS VARIANTS */
   const animateWrapper = {
     hidden: {
       clipPath: "circle(0% at 50% -10%)",
@@ -28,7 +28,6 @@ export const Project: React.FC<ProjectProps> = ({ project }): JSX.Element => {
       transition: { duration: 0.3, delayChildren: 0.25, staggerChildren: 0.18 },
     },
   };
-
   const animateText = {
     hidden: {
       opacity: 0,
@@ -39,6 +38,7 @@ export const Project: React.FC<ProjectProps> = ({ project }): JSX.Element => {
       y: 0,
     },
   };
+  /* ANIMATIONS VARIANTS END*/
 
   return (
     <OutsideClick

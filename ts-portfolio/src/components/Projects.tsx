@@ -6,8 +6,9 @@ import { Project } from "./Project";
 import projectsdata from "../data/projects.json";
 
 export const Projects: React.FC = (): JSX.Element => {
-  const [activeTab, setActiveTab] = useState("tab1");
-  const tabs = ["tab1", "tab2", "tab3"];
+  const [activeTab, setActiveTab] = useState<string>("tab1");
+
+  const tabs: string[] = ["tab1", "tab2", "tab3"];
 
   const projects: {
     name: string;
@@ -54,10 +55,10 @@ export const Projects: React.FC = (): JSX.Element => {
         learning process. Some I made to help small Businesses, some just for
         fun. Check them out:
       </p>
-      <div className="tabs">
+      <ul className="tabs">
         {tabs.map((tab) => {
           return (
-            <motion.div
+            <motion.li
               className="tab"
               key={tab}
               initial={false}
@@ -71,12 +72,12 @@ export const Projects: React.FC = (): JSX.Element => {
                 className="tab-background"
                 variants={animateTab}
               ></motion.div>
-            </motion.div>
+            </motion.li>
           );
         })}
-      </div>
+      </ul>
       <AnimatePresence>
-        <motion.div
+        <motion.ul
           className="projects-grig tab-1"
           variants={animateGrid}
           initial={false}
@@ -84,7 +85,7 @@ export const Projects: React.FC = (): JSX.Element => {
         >
           {projects.map((project, i) => {
             return (
-              <motion.div
+              <motion.li
                 key={i}
                 variants={animatedElement}
                 initial={"offscreen"}
@@ -92,10 +93,10 @@ export const Projects: React.FC = (): JSX.Element => {
                 viewport={{ amount: 0.3 }}
               >
                 <Project project={project} />
-              </motion.div>
+              </motion.li>
             );
           })}
-        </motion.div>
+        </motion.ul>
       </AnimatePresence>
 
       <AnimatePresence>
