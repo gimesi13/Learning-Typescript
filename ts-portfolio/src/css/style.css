@@ -315,11 +315,13 @@
     visibility: hidden;
   }
 }
-.navbar .dropdown-menu div {
+.navbar .dropdown-menu div,
+.navbar .dropdown-menu a {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-.navbar .dropdown-menu div:hover {
+.navbar .dropdown-menu div:hover,
+.navbar .dropdown-menu a:hover {
   color: rgb(255, 255, 255);
 }
 

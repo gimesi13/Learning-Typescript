@@ -211,10 +211,12 @@
     @media (min-width: 768px) {
       visibility: hidden;
     }
-    div {
+    div,
+    a {
       transition: color 0.3s;
     }
-    div:hover {
+    div:hover,
+    a:hover {
       color: rgb(255, 255, 255);
     }
   }

@@ -8,8 +8,6 @@ import {
 } from "framer-motion";
 import { BsLinkedin, BsFacebook, BsGithub } from "react-icons/bs";
 import { CgMenu, CgClose } from "react-icons/cg";
-/* import hacker from "./Pictures/undraw_cloud_files_wmo8.svg";
- */
 
 export const NavBar: React.FC = (): JSX.Element => {
   /* STATES */
