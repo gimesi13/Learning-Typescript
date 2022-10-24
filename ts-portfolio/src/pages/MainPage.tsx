@@ -5,8 +5,13 @@ import { Skills } from "../components/Skills";
 import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
+import { WithT } from "i18next";
 
-export const MainPage = () => {
+interface Props {
+  num: number;
+}
+
+export const MainPage: React.FC<Props & WithT> = ({ t, num }): JSX.Element => {
   return (
     <>
       <NavBar />
