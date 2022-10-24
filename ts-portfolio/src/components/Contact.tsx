@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-//import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import inbox from "../Pictures/undraw_envelope_re_f5j4.svg";
 import { SiMinutemailer } from "react-icons/si";
 import { Form, Field } from "react-final-form";
@@ -17,11 +17,10 @@ const animatedElement = {
 
 export const Contact: React.FC = (): JSX.Element => {
   /* emailjs code*/
-  /*   const form = useRef();
+  const form: any = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
+    //e.preventDefault();
     emailjs
       .sendForm(
         "service_a0zsakn",
@@ -37,7 +36,9 @@ export const Contact: React.FC = (): JSX.Element => {
           console.log(error.text);
         }
       );
-  }; */
+  };
+
+  const validate: any = (e: any) => {};
 
   return (
     <section className="banner contact">
@@ -54,12 +55,13 @@ export const Contact: React.FC = (): JSX.Element => {
         <img className="inbox-svg" src={inbox} alt="inbox" />
       </motion.div>
       <Form
+        validate={validate}
         onSubmit={() => {
-          alert("submitted");
+          sendEmail();
         }}
       >
         {({ handleSubmit }) => (
-          <form onSubmit={handleSubmit} className="contact-right">
+          <form ref={form} onSubmit={handleSubmit} className="contact-right">
             <h1>Get In Touch</h1>
             <h2>
               <SiMinutemailer /> gergely.gimesi@gmail.com
@@ -69,7 +71,7 @@ export const Contact: React.FC = (): JSX.Element => {
               <Field
                 name="firstname"
                 component="input"
-                placeholder="first name"
+                placeholder="eg.: John"
               ></Field>
             </div>
             <div className="contact-right-name">
@@ -77,7 +79,7 @@ export const Contact: React.FC = (): JSX.Element => {
               <Field
                 name="lastname"
                 component="input"
-                placeholder="last name"
+                placeholder="eg.: Snow"
               ></Field>
             </div>
             <div className="contact-right-email-phone">
@@ -100,8 +102,6 @@ export const Contact: React.FC = (): JSX.Element => {
                 className="contact-right-send-input"
                 type="submit"
                 value="Send"
-                /* whileHover={{ x: 10 }}
-                whileTap={{ scale: 0.9 }} */
               >
                 Send
               </button>
