@@ -81,23 +81,21 @@
     }
 
     .home-left-welcome-wrapper {
-      background: rgba(221, 99, 219, 0.288);
+      background: rgb(98, 163, 136);
       background: linear-gradient(
-        211deg,
-        rgba(221, 99, 219, 0.334) 14%,
-        rgba(61, 47, 154, 0.662) 62%,
-        rgba(0, 50, 119, 0.671) 78%
+        63deg,
+        rgba(98, 163, 136, 1) 0%,
+        rgba(5, 94, 104, 1) 92%
       );
       padding: 3px;
 
       //laptop//
       @media (min-width: 768px) {
-        background: rgba(221, 99, 219, 0.658);
+        background: rgb(98, 163, 136);
         background: linear-gradient(
-          211deg,
-          rgba(221, 99, 219, 0.555) 14%,
-          rgba(62, 47, 154, 1) 62%,
-          rgba(0, 50, 119, 1) 78%
+          63deg,
+          rgba(98, 163, 136, 1) 0%,
+          rgba(5, 94, 104, 1) 92%
         );
         padding: 3px;
       }
@@ -143,6 +141,11 @@
       //large//
       @media (min-width: 1200px) {
         font-size: 1.8rem;
+      }
+      .typed {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        color: white;
       }
       span a {
         margin-left: 0.5rem;

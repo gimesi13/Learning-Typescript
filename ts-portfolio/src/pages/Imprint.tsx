@@ -1,3 +1,4 @@
+import { Footer } from "components/Footer";
 import { Link } from "react-router-dom";
 
 export const Imprint: React.FC = (): JSX.Element => {
@@ -122,6 +123,7 @@ export const Imprint: React.FC = (): JSX.Element => {
         alias mollitia repudiandae nesciunt molestiae saepe velit nam ex eveniet
         officia.
       </div>
+      <Footer />
     </div>
   );
 };

@@ -85,7 +85,7 @@ export const NavBar: React.FC = (): JSX.Element => {
     <nav id="navbar" className="navbar">
       <div className="navbar-left">
         <a href="#home" className="navbar-left-logo">
-          GG
+          Gimesi <span className="g">G</span>
         </a>
       </div>
       <div className="navbar-right">

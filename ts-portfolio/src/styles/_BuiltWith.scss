@@ -19,13 +19,7 @@
   position: relative;
   .wrapper {
     z-index: -10;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      36deg,
-      rgba(0, 0, 0, 1) 11%,
-      rgba(26, 68, 159, 1) 62%,
-      rgba(222, 110, 255, 1) 98%
-    );
+    background: #62a388;
   }
 
   color: rgb(219, 219, 219);

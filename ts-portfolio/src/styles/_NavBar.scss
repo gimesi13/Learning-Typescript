@@ -43,7 +43,6 @@
   }
 
   /* LEFT SECTION */
-  /* no logo yet */
   .navbar-left {
     @include flexCenter;
     height: 100%;
@@ -73,8 +72,10 @@
     .navbar-left-logo {
       @include flexCenter;
 
-      .hacker-svg {
-        width: 5.9rem;
+      .g {
+        padding: 0.5rem;
+        font-size: 3rem;
+        color: #62a388;
       }
     }
   }
@@ -112,7 +113,7 @@
       }
 
       a:hover {
-        color: white;
+        color: #62a388;
         transition: color 0.3s;
       }
     }
@@ -140,7 +141,7 @@
         }
       }
       div:hover {
-        color: white;
+        color: #62a388;
         transition: color 0.3s;
       }
     }
@@ -156,7 +157,7 @@
         white-space: nowrap;
       }
       div:hover {
-        color: white;
+        color: #62a388;
         transition: color 0.3s;
       }
     }
@@ -225,7 +226,7 @@
 .navbar.small {
   box-shadow: 0px 0px 17px 10px #252525;
   height: 5.5rem;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(34, 34, 34);
   box-shadow: 0px 0px 10px 4px #252525;
   transition: all 0.2s ease;
 }

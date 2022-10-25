@@ -19,13 +19,7 @@
   position: relative;
   .wrapper {
     z-index: -10;
-    background: rgb(26, 68, 159);
-    background: linear-gradient(
-      108deg,
-      rgba(26, 68, 159, 1) 2%,
-      rgba(70, 15, 99, 1) 38%,
-      rgba(222, 110, 255, 1) 100%
-    );
+    background: #055e68;
   }
 
   @include flexCenter;

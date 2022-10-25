@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import programmer from "../Pictures/undraw_feeling_proud_qne1.svg";
 import { BsArrowRightCircle } from "react-icons/bs";
+import Typed from "react-typed";
 
 interface Person {
   firstName: string;
@@ -51,7 +52,15 @@ export const Hero: React.FC<Props> = ({ name, age }) => {
         <motion.h1 variants={animatedText}>Hi! I'm {name.firstName}!</motion.h1>
         <motion.p variants={animatedText}>
           I'm a {age} years old Fronted Developer and I build web applications
-          using React.js.<br></br>
+          using
+          <Typed
+            className="typed"
+            strings={[" React.", " TypeScript."]}
+            typeSpeed={120}
+            backSpeed={140}
+            loop
+          />
+          <br></br>
           Right now, I'm practicing TypeScript, this application is meant to
           demonstrate some basic features of typescript implemented on a React
           Application.
@@ -89,7 +98,13 @@ export const Hero: React.FC<Props> = ({ name, age }) => {
         whileInView={"onscreen"}
         viewport={{ once: false, amount: 0.3 }}
       >
-        <img className="programmer-svg" src={programmer} alt="programmer" />
+        <motion.img
+          animate={{ y: [10, -10] }}
+          transition={{ yoyo: Infinity, duration: 3 }}
+          className="programmer-svg"
+          src={programmer}
+          alt="programmer"
+        />
       </motion.div>
     </section>
   );
