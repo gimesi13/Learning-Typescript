@@ -5,14 +5,14 @@ import { Imprint } from "pages/Imprint";
 /* router */
 import { Route, Routes } from "react-router-dom";
 /* Translation package */
-import i18n from "i18next";
-import { initReactI18next, useTranslation } from "react-i18next";
+/* import i18n from "i18next";
+import { initReactI18next, useTranslation } from "react-i18next"; */
 /* Languages */
-import En from "./languages/en.json";
-import Hu from "./languages/hu.json";
+/* import En from "./languages/en.json";
+import Hu from "./languages/hu.json"; */
 
 /* LANGUAGES */
-const translationsEn = En;
+/* const translationsEn = En;
 const translationsHu = Hu;
 
 i18n
@@ -25,17 +25,17 @@ i18n
     lng: "en",
     fallbackLng: "en",
     interpolation: { escapeValue: false },
-  });
+  }); */
 /* LANGUAGES END */
 
 const App: React.FC = () => {
   /* useTranslation hook */
-  const { t } = useTranslation();
+  /* const { t } = useTranslation(); */
   return (
     <Suspense fallback="Loading...">
       <div className="App">
         <Routes>
-          <Route path="/" element={<MainPage num={2} t={t} />}></Route>
+          <Route path="/" element={<MainPage />}></Route>
           <Route path="/imprint" element={<Imprint />}></Route>
         </Routes>
       </div>
