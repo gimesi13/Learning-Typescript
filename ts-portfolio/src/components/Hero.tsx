@@ -69,7 +69,7 @@ export const Hero: React.FC<Props> = ({ name, age }) => {
             Click
             <a
               className="source-code"
-              href="https://github.com/gimesi13/Learning-Typescript"
+              href="https://github.com/gimesi13/Learning-Typescript/tree/main/ts-portfolio"
               target="_blank"
               rel="noreferrer"
             >

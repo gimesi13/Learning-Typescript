@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { SiSass, SiReact, SiFramer } from "react-icons/si";
+import { SiSass, SiReact, SiFramer, SiTypescript } from "react-icons/si";
 import { MdDraw } from "react-icons/md";
 /* Components */
 import { Slider } from "./Slider";
 
 //images array
 const images: { img: JSX.Element; name: string }[] = [
+  { img: <SiTypescript />, name: "TypeScript" },
   { img: <SiReact />, name: "React.js" },
   { img: <SiSass />, name: "Sass" },
   { img: <SiFramer />, name: "Framer Motion" },

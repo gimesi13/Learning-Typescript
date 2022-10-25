@@ -2002,7 +2002,8 @@ option {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none outside none;
 }
 

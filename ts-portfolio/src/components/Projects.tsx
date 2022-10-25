@@ -83,7 +83,7 @@ export const Projects: React.FC = (): JSX.Element => {
           initial={false}
           animate={activeTab === "tab1" ? "show" : "hidden"}
         >
-          {projects.map((project, i) => {
+          {projects.slice(0, 6).map((project, i) => {
             return (
               <motion.li
                 key={i}
@@ -101,15 +101,35 @@ export const Projects: React.FC = (): JSX.Element => {
 
       <AnimatePresence>
         <motion.div
-          className="projects-grig tab-2"
+          className="projects-grig tab-1"
           variants={animateGrid}
           initial={false}
           animate={activeTab === "tab2" ? "show" : "hidden"}
         >
-          <div className="thinker">
-            <img className="thinker-svg" src={thinker} alt="thinker" />
-          </div>
-          <p>More projects coming soon... 😊</p>
+          {projectsdata.length > 6 ? (
+            <>
+              {projects.slice(6, 12).map((project, i) => {
+                return (
+                  <motion.li
+                    key={i}
+                    variants={animatedElement}
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    viewport={{ amount: 0.3 }}
+                  >
+                    <Project project={project} />
+                  </motion.li>
+                );
+              })}
+            </>
+          ) : (
+            <div>
+              <div className="thinker">
+                <img className="thinker-svg" src={thinker} alt="thinker" />
+              </div>
+              <p>More projects coming soon... 😊</p>
+            </div>
+          )}
         </motion.div>
       </AnimatePresence>
 

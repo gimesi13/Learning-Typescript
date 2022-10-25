@@ -1,5 +1,13 @@
 [
   {
+    "name": "React Portfolio",
+    "description": "Personal Portfolio Site with React",
+    "tech": "React, Framer, SASS",
+    "link": "https://gimesi13.github.io/React-Portfolio/",
+    "thumbnail": "images/react-portfolio-image.PNG",
+    "github": "https://github.com/gimesi13/GHM-React/tree/main/ghm-react"
+  },
+  {
     "name": "Youth-Hostel Webpage",
     "description": "Multi-language responsive Website of an Austrian Youth Hostel",
     "tech": "React, Framer, SASS",

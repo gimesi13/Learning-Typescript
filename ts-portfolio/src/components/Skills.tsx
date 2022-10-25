@@ -9,10 +9,13 @@ import {
   SiFramer,
   SiJquery,
   SiTailwindcss,
+  SiTypescript,
+  SiBootstrap,
 } from "react-icons/si";
 
 //images array for slider
 const images: { img: JSX.Element; name: string }[] = [
+  { img: <SiTypescript />, name: "TypeScript" },
   { img: <SiReact />, name: "React.js" },
   { img: <SiJavascript />, name: "Javascript" },
   { img: <SiCss3 />, name: "CSS3" },
@@ -21,6 +24,7 @@ const images: { img: JSX.Element; name: string }[] = [
   { img: <SiHtml5 />, name: "HTML5" },
   { img: <SiFramer />, name: "Framer Motion" },
   { img: <SiJquery />, name: "Jquery" },
+  { img: <SiBootstrap />, name: "Bootstrap" },
 ];
 
 //breakpoints for the carousel slider
