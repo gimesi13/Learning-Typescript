@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-/* Icons */
-import {
-  BsLinkedin,
-  BsFacebook,
-  BsGithub,
-  BsArrowUpCircleFill,
-} from "react-icons/bs";
 import { SiSass, SiReact, SiFramer } from "react-icons/si";
 import { MdDraw } from "react-icons/md";
 /* Components */
@@ -49,14 +42,17 @@ const breakPoints: { width: number; itemsToShow: number }[] = [
 
 export const BuiltWith: React.FC = (): JSX.Element => {
   return (
-    <motion.div
-      initial={{
-        y: -90,
-      }}
-      className="footer-build-box"
-    >
-      <h1>This Website has been built with:</h1>
-      <Slider images={images} breakPoints={breakPoints} />
-    </motion.div>
+    <section className="banner builtwith-section">
+      <div className="wrapper"></div>
+      <motion.div
+        initial={{
+          y: -90,
+        }}
+        className="footer-build-box"
+      >
+        <h1>This Website has been built with:</h1>
+        <Slider images={images} breakPoints={breakPoints} />
+      </motion.div>
+    </section>
   );
 };

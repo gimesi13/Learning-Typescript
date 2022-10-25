@@ -1340,87 +1340,12 @@
 .footer-section {
   position: relative;
   color: rgb(219, 219, 219);
-  /* UPPER BOX */
   /* BOTTOM PART */
 }
 .footer-section .wrapper {
   z-index: -10;
   background: rgb(0, 0, 0);
   background: linear-gradient(36deg, rgb(0, 0, 0) 11%, rgb(26, 68, 159) 62%, rgb(222, 110, 255) 98%);
-}
-.footer-section .footer-build-box {
-  background: rgb(219, 219, 219);
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 3rem;
-  gap: 1rem;
-}
-@media (min-width: 576px) {
-  .footer-section .footer-build-box {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .footer-section .footer-build-box {
-    border-radius: 4rem;
-    padding: 4rem;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    gap: 2rem;
-  }
-}
-@media (min-width: 992px) {
-  .footer-section .footer-build-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    border-radius: 5rem;
-    padding: 5rem;
-    padding-left: 8vw;
-    padding-right: 8vw;
-    gap: 4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .footer-section .footer-build-box {
-    border-radius: 6rem;
-    padding: 6rem;
-  }
-}
-.footer-section .footer-build-box h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin: 0;
-  margin-bottom: 2rem;
-}
-@media (min-width: 992px) {
-  .footer-section .footer-build-box h1 {
-    margin-bottom: 0;
-  }
-}
-.footer-section .footer-build-box div {
-  width: 100%;
-  height: 10rem;
 }
 .footer-section .footer-bottom-container {
   display: -webkit-box;
@@ -1844,6 +1769,107 @@
 }
 .project .project-wrapper div .live-code:hover {
   color: white;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.builtwith-section {
+  position: relative;
+  color: rgb(219, 219, 219);
+  /* UPPER BOX */
+}
+.builtwith-section .wrapper {
+  z-index: -10;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(36deg, rgb(0, 0, 0) 11%, rgb(26, 68, 159) 62%, rgb(222, 110, 255) 98%);
+}
+.builtwith-section .footer-build-box {
+  background: rgb(219, 219, 219);
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 3rem;
+  gap: 1rem;
+}
+@media (min-width: 576px) {
+  .builtwith-section .footer-build-box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .builtwith-section .footer-build-box {
+    border-radius: 4rem;
+    padding: 4rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .builtwith-section .footer-build-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 5rem;
+    padding: 5rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    gap: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .builtwith-section .footer-build-box {
+    border-radius: 6rem;
+    padding: 6rem;
+  }
+}
+.builtwith-section .footer-build-box h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .builtwith-section .footer-build-box h1 {
+    margin-bottom: 0;
+  }
+}
+.builtwith-section .footer-build-box div {
+  width: 100%;
+  height: 10rem;
 }
 
 html,
