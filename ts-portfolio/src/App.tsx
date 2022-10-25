@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 /* pages */
 import { MainPage } from "pages/MainPage";
+import { Imprint } from "pages/Imprint";
 /* router */
 import { Route, Routes } from "react-router-dom";
 /* Translation package */
@@ -35,8 +36,7 @@ const App: React.FC = () => {
       <div className="App">
         <Routes>
           <Route path="/" element={<MainPage num={2} t={t} />}></Route>
-          {/* <Route path="/asd" element={<Another />}></Route>
-          <Route path="/ds" element={<Other />}></Route> */}
+          <Route path="/imprint" element={<Imprint />}></Route>
         </Routes>
       </div>
     </Suspense>
