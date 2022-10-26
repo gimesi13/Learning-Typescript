@@ -41,6 +41,9 @@ export const Contact: React.FC = (): JSX.Element => {
     }
   };
 
+  const required = (value: string) => (value ? undefined : "*Required");
+  const validateEmail = (value: string) =>
+    value! && value.includes("@") ? undefined : "incorrect email address";
   const validate = (
     e: object
   ): ValidationErrors | Promise<ValidationErrors> => {
@@ -64,12 +67,11 @@ export const Contact: React.FC = (): JSX.Element => {
         <img className="inbox-svg" src={inbox} alt="inbox" />
       </motion.div>
       <Form
-        validate={validate}
         onSubmit={() => {
           sendEmail();
         }}
       >
-        {({ handleSubmit }) => (
+        {({ handleSubmit, values, valid }) => (
           <form ref={form} onSubmit={handleSubmit} className="contact-right">
             <h1>Get In Touch</h1>
             <h2>
@@ -77,22 +79,37 @@ export const Contact: React.FC = (): JSX.Element => {
             </h2>
             <div className="contact-right-name">
               <label>First Name</label>
-              <Field
-                name="firstname"
-                component="input"
-                placeholder="eg.: John"
-              ></Field>
+              <Field validate={required} name="firstname">
+                {({ input, meta }) => (
+                  <>
+                    <input type="text" placeholder="" {...input}></input>
+                    {meta.touched && meta.error && <span>{meta.error}</span>}
+                  </>
+                )}
+              </Field>
             </div>
             <div className="contact-right-name">
               <label>Last Name</label>
-              <Field
-                name="lastname"
-                component="input"
-                placeholder="eg.: Snow"
-              ></Field>
+              <Field validate={required} name="lastname">
+                {({ input, meta }) => (
+                  <>
+                    <input type="text" placeholder="" {...input}></input>
+                    {meta.touched && meta.error && (
+                      <span className="error-message">{meta.error}</span>
+                    )}
+                  </>
+                )}
+              </Field>
             </div>
             <div className="contact-right-email-phone">
-              <Field name="email" component="input" placeholder="Email"></Field>
+              <Field validate={validateEmail} name="email">
+                {({ input, meta }) => (
+                  <>
+                    <input type="text" placeholder="Email" {...input}></input>
+                    {meta.touched && meta.error && <span>{meta.error}</span>}
+                  </>
+                )}
+              </Field>
               <Field
                 name="phone"
                 component="input"
