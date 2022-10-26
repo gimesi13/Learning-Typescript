@@ -1093,6 +1093,10 @@
     font-size: 1.5rem;
   }
 }
+.contact .contact-right .error-message {
+  max-width: 40%;
+  color: rgb(255, 53, 53);
+}
 .contact .contact-right .contact-right-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1308,7 +1312,7 @@
 .contact .contact-right .contact-right-send .contact-right-send-input {
   cursor: pointer;
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 0px;
   font-size: 1rem;
   padding: 1rem;
@@ -1318,11 +1322,18 @@
   margin-bottom: 2rem;
   font-weight: bold;
   border: 2px solid black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 @media (min-width: 768px) {
   .contact .contact-right .contact-right-send .contact-right-send-input {
     font-size: 1.5rem;
   }
+}
+.contact .contact-right .contact-right-send .contact-right-send-input:hover {
+  background-color: white;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 /* MIXINS */

@@ -41,9 +41,15 @@ export const Contact: React.FC = (): JSX.Element => {
     }
   };
 
-  const required = (value: string) => (value ? undefined : "*Required");
+  const required = (value: string) => (value ? undefined : "*required");
   const validateEmail = (value: string) =>
-    value! && value.includes("@") ? undefined : "incorrect email address";
+    value! &&
+    value.match(
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/gi
+    )
+      ? undefined
+      : "*incorrect email address";
+
   const validate = (
     e: object
   ): ValidationErrors | Promise<ValidationErrors> => {
@@ -78,22 +84,30 @@ export const Contact: React.FC = (): JSX.Element => {
               <SiMinutemailer /> gergely.gimesi@gmail.com
             </h2>
             <div className="contact-right-name">
-              <label>First Name</label>
               <Field validate={required} name="firstname">
                 {({ input, meta }) => (
                   <>
-                    <input type="text" placeholder="" {...input}></input>
-                    {meta.touched && meta.error && <span>{meta.error}</span>}
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      {...input}
+                    ></input>
+                    {meta.touched && meta.error && (
+                      <span className="error-message">{meta.error}</span>
+                    )}
                   </>
                 )}
               </Field>
             </div>
             <div className="contact-right-name">
-              <label>Last Name</label>
               <Field validate={required} name="lastname">
                 {({ input, meta }) => (
                   <>
-                    <input type="text" placeholder="" {...input}></input>
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      {...input}
+                    ></input>
                     {meta.touched && meta.error && (
                       <span className="error-message">{meta.error}</span>
                     )}
@@ -106,16 +120,21 @@ export const Contact: React.FC = (): JSX.Element => {
                 {({ input, meta }) => (
                   <>
                     <input type="text" placeholder="Email" {...input}></input>
-                    {meta.touched && meta.error && <span>{meta.error}</span>}
+                    {meta.touched && meta.error && (
+                      <span className="error-message">{meta.error}</span>
+                    )}
                   </>
                 )}
               </Field>
+            </div>
+            <div className="contact-right-email-phone">
               <Field
                 name="phone"
                 component="input"
                 placeholder="Phone No."
               ></Field>
             </div>
+
             <div className="contact-right-message">
               <Field
                 name="message"

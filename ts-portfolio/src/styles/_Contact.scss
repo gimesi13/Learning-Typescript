@@ -113,6 +113,10 @@
         font-size: 1.5rem;
       }
     }
+    .error-message {
+      max-width: 40%;
+      color: rgb(255, 53, 53);
+    }
 
     .contact-right-name {
       @include flexCenter;
@@ -199,7 +203,7 @@
       .contact-right-send-input {
         cursor: pointer;
         color: black;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.7);
         border-radius: 0px;
         font-size: 1rem;
         padding: 1rem;
@@ -209,10 +213,15 @@
         margin-bottom: 2rem;
         font-weight: bold;
         border: 2px solid black;
+        transition: 0.1s;
 
         @media (min-width: 768px) {
           font-size: 1.5rem;
         }
+      }
+      .contact-right-send-input:hover {
+        background-color: white;
+        transition: 0.1s;
       }
     }
   }
