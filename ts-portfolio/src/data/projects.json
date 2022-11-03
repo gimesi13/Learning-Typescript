@@ -1,7 +1,7 @@
 [
   {
     "name": "React Portfolio",
-    "description": "Personal Portfolio Site with React",
+    "description": "Old version of my Personal Portfolio site with React",
     "tech": "React, Framer, SASS",
     "link": "https://gimesi13.github.io/React-Portfolio/",
     "thumbnail": "images/react-portfolio-image.PNG",
@@ -27,9 +27,9 @@
     "name": "Fake Store",
     "description": "Advanced TypeScript Shopping Cart with Context and Bootstrap",
     "tech": " React, TypeScript, Bootstrap, ContextAPI",
-    "link": "https://brilliant-semolina-fe6b3a.netlify.app/",
-    "thumbnail": "images/daily-quotes-image.PNG",
-    "github": "https://github.com/gimesi13/Learning-React/tree/main/wishes-project"
+    "link": "https://classy-sunburst-701443.netlify.app/",
+    "thumbnail": "images/store-image.PNG",
+    "github": "https://github.com/gimesi13/Learning-Typescript/tree/main/typescript-shopping-cart"
   },
   {
     "name": "React Todo",
