@@ -40,6 +40,14 @@
     "github": "https://github.com/gimesi13/Framer-Motion-React/tree/master/framer-motion/framer-motion-2/framer-animations-2"
   },
   {
+    "name": "Hangman Game",
+    "description": "Classic HANGMAN Game with TypeScript and React",
+    "tech": " React, TypeScript",
+    "link": "https://dainty-salamander-1adf73.netlify.app/",
+    "thumbnail": "images/hangman-image.PNG",
+    "github": "https://github.com/gimesi13/hangman-game/tree/main/hangman"
+  },
+  {
     "name": "Tailwind CSS",
     "description": "Homepage built with Tailwind and React",
     "tech": " React, Tailwind.css, Typed",

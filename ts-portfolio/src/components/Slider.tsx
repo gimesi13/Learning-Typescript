@@ -1,4 +1,5 @@
-import Carousel from "react-elastic-carousel";
+import { ReactNode } from "react";
+import Carousel, { ItemObject } from "react-elastic-carousel";
 
 interface SliderProps {
   breakPoints: {
@@ -9,16 +10,17 @@ interface SliderProps {
     img: JSX.Element;
     name: string;
   }[];
+  children?: ReactNode
 }
 
 //carousel needs fixing
 export const Slider: React.FC<SliderProps> = ({
   images,
-  breakPoints,
+  breakPoints
 }): JSX.Element => {
   return (
     <div className="slider-container">
-      <Carousel className="slider" breakPoints={breakPoints}>
+      <Carousel isRTL={false} className="slider" breakPoints={breakPoints}>
         {images.map((image) => {
           return (
             <div className="slider-image" key={image.img.type}>
