@@ -24,6 +24,14 @@
     "github": "https://github.com/gimesi13/Learning-React/tree/main/wishes-project"
   },
   {
+    "name": "Fake Store",
+    "description": "Advanced TypeScript Shopping Cart with Context and Bootstrap",
+    "tech": " React, TypeScript, Bootstrap, ContextAPI",
+    "link": "https://brilliant-semolina-fe6b3a.netlify.app/",
+    "thumbnail": "images/daily-quotes-image.PNG",
+    "github": "https://github.com/gimesi13/Learning-React/tree/main/wishes-project"
+  },
+  {
     "name": "React Todo",
     "description": "Todo List with local storage",
     "tech": " React, CSS ",

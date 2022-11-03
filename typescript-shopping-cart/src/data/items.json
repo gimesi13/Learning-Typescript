@@ -3,13 +3,13 @@
     "id": 1,
     "name": "Book",
     "price": 10.99,
-    "imgUrl": "images/book.jpg"
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg"
   },
   {
     "id": 2,
     "name": "Computer",
     "price": 1199,
-    "imgUrl": "images/computer.jpg"
+    "imgUrl": "https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
   {
     "id": 3,
@@ -21,6 +21,18 @@
     "id": 4,
     "name": "Car",
     "price": 14000,
-    "imgUrl": "/images/car.jpg"
+    "imgUrl": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Shoe",
+    "price": 120.99,
+    "imgUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Ball",
+    "price": 35.5,
+    "imgUrl": "https://images.unsplash.com/photo-1516567727245-ad8c68f3ec93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
   }
 ]
