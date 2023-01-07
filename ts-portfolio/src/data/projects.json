@@ -1,7 +1,7 @@
 [
   {
     "name": "React Portfolio",
-    "description": "Personal Portfolio Site with React",
+    "description": "Old version of my Personal Portfolio site with React",
     "tech": "React, Framer, SASS",
     "link": "https://gimesi13.github.io/React-Portfolio/",
     "thumbnail": "images/react-portfolio-image.PNG",
@@ -24,6 +24,14 @@
     "github": "https://github.com/gimesi13/Learning-React/tree/main/wishes-project"
   },
   {
+    "name": "Fake Store",
+    "description": "Advanced TypeScript Shopping Cart with Context and Bootstrap",
+    "tech": " React, TypeScript, Bootstrap, ContextAPI",
+    "link": "https://classy-sunburst-701443.netlify.app/",
+    "thumbnail": "images/store-image.PNG",
+    "github": "https://github.com/gimesi13/Learning-Typescript/tree/main/typescript-shopping-cart"
+  },
+  {
     "name": "React Todo",
     "description": "Todo List with local storage",
     "tech": " React, CSS ",
@@ -38,6 +46,14 @@
     "link": "https://neon-dusk-d9a33c.netlify.app/",
     "thumbnail": "images/framer-motion-image.PNG",
     "github": "https://github.com/gimesi13/Framer-Motion-React/tree/master/framer-motion/framer-motion-2/framer-animations-2"
+  },
+  {
+    "name": "Hangman Game",
+    "description": "Classic HANGMAN Game with TypeScript and React",
+    "tech": " React, TypeScript",
+    "link": "https://dainty-salamander-1adf73.netlify.app/",
+    "thumbnail": "images/hangman-image.PNG",
+    "github": "https://github.com/gimesi13/hangman-game/tree/main/hangman"
   },
   {
     "name": "Tailwind CSS",

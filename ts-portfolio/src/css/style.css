@@ -327,12 +327,8 @@
 }
 
 .navbar.small {
-  -webkit-box-shadow: 0px 0px 17px 10px #252525;
-          box-shadow: 0px 0px 17px 10px #252525;
   height: 5.5rem;
   background-color: rgb(34, 34, 34);
-  -webkit-box-shadow: 0px 0px 10px 4px #252525;
-          box-shadow: 0px 0px 10px 4px #252525;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
