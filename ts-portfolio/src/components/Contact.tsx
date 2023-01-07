@@ -15,8 +15,9 @@ const animatedElement = {
   },
 };
 
+
 export const Contact: React.FC = (): JSX.Element => {
-  /* emailjs code*/
+  /* emailjs code */
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (): void => {
