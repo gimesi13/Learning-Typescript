@@ -15,7 +15,7 @@ interface Props {
 }
 
 export const Hero: React.FC<Props> = ({ name, age }) => {
-  /* VARIANTS (animations) */
+  /*VARIANTS (animations)*/
   const animatedElement = {
     offscreen: { x: 100, opacity: 0 },
     onscreen: {
